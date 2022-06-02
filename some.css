@@ -1,0 +1,28 @@
+p,li{
+    color: blue;
+    width: 500px;
+    border: 2px solid black;
+
+}
+html{
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    background-color: antiquewhite;
+}
+body{
+    width: 600px;
+    margin: 0 auto;
+    background-color: lightsalmon;
+    padding: 0 20px 20px 20px;
+    border: 2px solid white;
+}
+h1{
+    margin: 0;
+    padding: 20px 0;
+    text-shadow: 2px 2px 1px white;
+}
+img{
+    display: block;
+    margin: 0 auto;
+    padding: 20px 20px 20px 20px;
+}
