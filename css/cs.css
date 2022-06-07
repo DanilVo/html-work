@@ -71,26 +71,37 @@ h2{
   }
 
 .slides{
-    width: 800px;
+    width: 600px;
     height: 500px;
     border-radius: 10px;
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: row;
+    margin-left: 140px;
 }
 
 .slides img{
-    display: none;
+    /* display: none; */
+    width: 800px;
+    height: 480px;
+    float: none;
+
 }
 
 .block{
-    display: block;
+    display: none;
     object-fit: cover;
     width: 100%;
     height: 100%;
+    transition: 0.5s;
+}
+
+.btnRight{
+    float: right;
+    margin: 10px 60px 20px 20px;
 }
 
 .container {
-    margin: 500px 50px 5px 50px;
+    margin: 0 50px 5px 50px;
     padding-top: 10px;
     background: var(--background);
     box-shadow: 0 0 16px 3px var(--box-shadow-color);
