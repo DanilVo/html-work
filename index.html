@@ -8,54 +8,60 @@
     <title>My Summary</title>
     <link rel="shortcut icon" href="img/summary.ico">
     <link rel="stylesheet" href="css/cs.css">
+    <script type="text/javascript" src="/js/script.js" defer></script>
 
 </head>
 
 <body>
-    <div class="container">
-        <div class="Header">
-            <h1>Welcome to my Resume summary!</h1>
-            <hr>
-        </div>
-        
+
+    <div class="header">
+        <button id="toggle-theme-btn"><img src="img/moon.png" alt="dark/light mode" id="toggle-theme-image"></button>
+        <h1>Welcome to my Resume summary!</h1>
         <div class="menu">
             <ul>
                 <li><a href="#aboutme">About me</a></li>
                 <li><a href="#myachivments">My achivments</a></li>
                 <li><a href="#mycontacts">My contacts</a></li>
             </ul>
-            <hr>
         </div>
+    </div>
+
+    <div class="slides">
+        <img src="img/nature2.png" alt="nature1" class="block">
+        <img src="img/nature3.png" alt="nature2">
+        <img src="img/nature1.png" alt="nature3">
+    </div>
+    <button class="btnRight" ></button>
+    <script src="js/slides.js" class="btnRight"></script>
+
+    <div class="container">
         <div class="photo">
-            <button id="toggle-theme-btn">
-                <img id="toggle-theme-image" src="img/pioners.png" alt="My picture">         
-                </button>
-            <img >
+            <a><img src="img/pioners.png" alt="My picture"></a>
         </div>
         <div class="content">
+            <h2>About me</h2>
             <p id="aboutme"> Welcome, if you visited this page so probably you looking for an new emplee. My name is
-                Danil, 24 years old from Tel-aviv, currently studying for an IT developer for one year.
-                There still a lot for me to learn but i am very motivated studen..If you interested in me, my contacts
+                Danil, 24 years old from Rishon-lezion, currently studying for an IT developer for one year.
+                There still a lot for me to learn but i am very motivated studen.If you interested in me, my contacts
                 below on page.
             </p>
-            <hr>
+            <h2>My achivments</h2>
             <p id="myachivments"> I am fluent in three languages (Russian "nativ", Hebrew "nativ", English "fluent").
-                <hr>
+            <h2>My contacts</h2>
             </p>
             <p id="mycontacts">Email:dani736@gmail.com</p>
             <p>Phone number: +972549108181</p>
             <p>LinkedIn: Danil Volobuyev</p>
-
         </div>
         <div class="bottompagephoto">
-            <a href=""><img src="img/developer.png" alt="bottom picture"></a>
+            <a><img src="img/developer.png" alt="bottom picture"></a>
         </div>
     </div>
     <div class="footer">
-        <div class="bottom-strip"></div>
-        <div class="notice">My Resume summary, all rights reserved(c)</div>
-        <div class="scroll"><a href="#top">Go up on page.</a></div>
-
+        <div class="bottom-strip">
+            <div class="notice">My Resume summary, all rights reserved(c)</div>
+            <div class="scroll"><a href="#top">Go up on page.</a></div>
+        </div>
     </div>
 </body>
 
