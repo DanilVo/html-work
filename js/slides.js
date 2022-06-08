@@ -1,20 +1,23 @@
-//querySelector= checking for class with specific name in (hooks)
+//querySelector= checking for class with specific class in (hooks)
 let classbtnRight = document.querySelector(".btnRight")
 //querySelectorALL= checking for all classes with name in (hooks)
-let varslides = document.querySelectorAll('img')
+let varslides = document.getElementsByClassName('slides')[0].children
+console.log(varslides)
 
-let i = 1;
+let i = 0;
 // function to read our click
 classbtnRight.addEventListener("click", function () {
-    i++;
-    if (i >= varslides.length && !(i > 3)) {
-        varslides[i - 1].classList.add("block")
-        varslides[i].classList.remove("block")
-        if(i = 3){
-            i = 1;
-        }
+    if (i === varslides.length-1) {
+        console.log('bla bla bla', i)
+        varslides[i].classList.add("block")
+        varslides[i-2].classList.remove("block")
+        i = 0;
     }else{
-        varslides[i - 1].classList.add("block")
-        varslides[i].classList.remove("block")
+        console.log('lololololol', i)
+        varslides[i+1].classList.remove("block")
+        varslides[i].classList.add("block")
+        i++;
     }
+
 })
+

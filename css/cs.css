@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
     font-family: Special_New;
     src: url(/fonts/CharisSIL-Italic.ttf);
-  } 
+  }  */
 
 * {
     font-family: Verdana;
@@ -73,18 +73,24 @@ h2{
 .slides{
     width: 600px;
     height: 500px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    margin-left: 140px;
+    /* border-radius: 10px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
+
+/* {
+    transition: 1s;
+ */
+/* } */
 
 .slides img{
     /* display: none; */
     width: 800px;
     height: 480px;
     float: none;
-
+    border-radius: 15px;
 }
 
 .block{
@@ -92,12 +98,21 @@ h2{
     object-fit: cover;
     width: 100%;
     height: 100%;
-    transition: 0.5s;
 }
 
 .btnRight{
     float: right;
-    margin: 10px 60px 20px 20px;
+    margin: 0px 60px 20px 20px;
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btnRight:hover{
+    background-color: var(--tongle);
+    border-radius: 5px;
+
 }
 
 .container {
