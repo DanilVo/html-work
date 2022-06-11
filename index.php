@@ -1,6 +1,9 @@
+<?
+$data = include_once('datainfo.php');
+$startData = $data['about'];
+?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +15,6 @@
     <script type="text/javascript" src="/js/script.js" defer></script>
 
 </head>
-
 <body>
 
     <div class="header">
@@ -32,7 +34,7 @@
         <img src="img/nature3.png" alt="nature2"  class="block">
         <img src="img/nature1.png" alt="nature3"  class="block">
     </div>
-    <button class="btnRight" ><img src="/img/right.png"></button>
+    <button class="btnRight" ><img src="img/right.png"></button>
     <script src="js/slides.js" class="btnRight" defer></script>
     
     <div class="container">
@@ -41,11 +43,9 @@
         </div>
         <div class="content">
             <h2>About me</h2>
-            <p id="aboutme"> Welcome, if you visited this page so probably you looking for an new emplee. My name is
-                Danil, 24 years old from Rishon-lezion, currently studying for an IT developer for one year.
-                There still a lot for me to learn but i am very motivated studen.If you interested in me, my contacts
-                below on page.
-            </p>
+            <p id="aboutme"><?=$startData['hello']?></p>
+            <p><?=$startData['me']?></p>
+            <p><?=$startData['whoMe']?></p>
             <h2>My achivments</h2>
             <p id="myachivments"> I am fluent in three languages (Russian "nativ", Hebrew "nativ", English "fluent").
             <h2>My contacts</h2>
