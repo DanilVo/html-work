@@ -1,6 +1,8 @@
 <?
-$data = include_once('datainfo.php');
+$data = include_once('aboutMe.php');
 $startData = $data['about'];
+$startMe = $data['achievements'];
+$startContacs = $data['contacts'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -46,13 +48,12 @@ $startData = $data['about'];
             <p id="aboutme"><?=$startData['hello']?></p>
             <p><?=$startData['me']?></p>
             <p><?=$startData['whoMe']?></p>
-            <h2>My achivments</h2>
-            <p id="myachivments"> I am fluent in three languages (Russian "nativ", Hebrew "nativ", English "fluent").
+            <h2>My achievements </h2>
+            <p id="myachivments"><?=$startMe['language']?></p>
             <h2>My contacts</h2>
-            </p>
-            <p id="mycontacts">Email:dani736@gmail.com</p>
-            <p>Phone number: +972549108181</p>
-            <p>LinkedIn: Danil Volobuyev</p>
+            <p id="mycontacts"><?=$startContacs['email']?></p>
+            <p><?=$startContacs['phoneNum']?></p>
+            <p><?=$startContacs['linkedIn']?></p>
         </div>
         <div class="bottompagephoto">
             <a><img src="img/developer.png" alt="bottom picture"></a>
@@ -67,3 +68,5 @@ $startData = $data['about'];
 </body>
 
 </html>
+
+<!-- Warning: Undefined array key "achivments" in C:\Users\משתמש\OneDrive\Desktop\html\index.php on line 4 -->
