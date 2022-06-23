@@ -1,0 +1,17 @@
+{
+    "summary": {
+        "main head":"welcome to my resume summary!",
+        "links":{
+            "head":["about me", "my achivments", "my contacts"]
+        },
+        "body":{
+            "about me":["about me","welcome, if you visited this page so probably you looking for an new emplee. My name is Danil, 24 years old from Rishon-lezion, currently studying for an IT developer for one year.There still a lot for me to learn but i am very motivated studen.If you interested in me, my contacts below on page."],
+            "My achievements":["My achievements","I am fluent in three languages (Russian 'nativ', Hebrew 'nativ', English 'fluent')."],
+            "My contacts":["My contacts","Email: dani736@gmail.com Phone number: +972549108181 LinkedIn: Danil Volobuyev"]
+        },
+        "footer":{
+            "left side": "My Resume summary, all rights reserved(c)",
+            "right link": "Go up the page."
+        }
+    }
+}
